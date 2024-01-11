@@ -24,6 +24,7 @@ python datautil.py
 Furthermore, I've provided comprehensive data for training, validation, and testing encapsulated in a pickle file named "data_output.pkl", which resides in the data folder.
 
 ## Modeling
+![Multilabel classification](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/multilable.png)
 
 Users need to install before using the Snakemake workflow.
 

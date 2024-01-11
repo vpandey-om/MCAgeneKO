@@ -48,7 +48,7 @@ To initiate training and prediction with the model, execute the following script
 python run_model.py
 ~~~
 To initiate training and prediction with the model, execute the following script:
-
+~~~
 python visualize_result.py
 ~~~
 The symbol '*' highlights the optimal model, showcasing the most effective stage and hyperparameters utilized during the model's training. 

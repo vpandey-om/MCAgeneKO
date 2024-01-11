@@ -40,6 +40,7 @@ To address the difficulties of our classification problems, we used a two-pronge
 2. Bagging Technique: To supplement our unique loss function, we used the bagging technique, a durable and effective ensemble method. This strategy requires training numerous models on different subsets of the dataset and then combining their predictions. Bagging successfully mitigates variation, improves model stability, and improves our classification framework's overall predictive capabilities by using the collective knowledge of several models.
 
 ### Challenges in Classification Tasks:
+![NN](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/multilableNN.png)
 ![parameter performance](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/parameters_performance.png)
 ![ROC](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/ROC.png)
 

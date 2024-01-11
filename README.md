@@ -4,28 +4,26 @@ This repository covers the modeling, data analysis, and visualization techniques
 ## Overview
 Our initiative aims to promote drug discovery in the context of malaria parasite research by combining machine and deep learning techniques to decipher gene functions. Specifically, we used prediction algorithms to conduct a genome-wide search for critical genes required by malaria parasites. These models were carefully trained using data from Plasmodium berghei knockout mutant growth rates. We added gene and protein-centric features to improve the model's prediction capabilities. Our systematic efforts resulted in a noteworthy accuracy rate of 70% in predicting cases where specific genes are considered essential based only on gene-related traits.
 
+## Prerequisites
+
+Users need to install before using the Snakemake workflow.
+
+- Python (>=3.7)
+
 ## Data collection and preprocessing 
 
 Data for phenotypes were gathered from several research that examined genetic knockouts in Plasmodium berghei at various life cycle stages. As previously stated, a comprehensive genome-scale knockout investigation [Blood screen](https://pubmed.ncbi.nlm.nih.gov/28708996/) was conducted to better understand gene involvement throughout the blood stage. Because continuous drug selection for knockouts is only possible during the parasite's asexual blood phases, this strategy aids in the research of genes important in the parasite's later stages post-blood. Following research focused on the liver stage [Liver sceren](https://pubmed.ncbi.nlm.nih.gov/31730853/), while another bar-seq screen investigation found genes important for male and female gametocyte development. In addition, as stated in [Fetility screen](https://www.biorxiv.org/content/10.1101/2023.12.25.572958v1.abstract), a screening was performed to identify genes associated with male and female fertility. The phenotypic web interface compiles all of these screening datasets for easy access.
 
 Single-cell gene expression data originate from the Malaria Cell Atlas ([MCA](https://www.malariacellatlas.org/)) and bulk-RNA gene expression data were collected from multiple studies, including [Study1](https://pubmed.ncbi.nlm.nih.gov/30177743/) and [Study2](https://pubmed.ncbi.nlm.nih.gov/28081440/). Additionally, bulk-RNA gene expression data are from diffrent life cycle stages of malaria parasites.
 
+The preprocessing scripts can be found in the data_preprocessing directory within the code folder. To obtain all the necessary data, execute the following command:
+~~~
+python datautil.py
+~~~
 
+Furthermore, I've provided comprehensive data for training, validation, and testing encapsulated in a pickle file named "data_output.pkl", which resides in the data folder.
 
-We used barcoded PlasmoGEM knockout (KO) vectors to mutagenize two P. berghei background lines including one that produces only fertile male gametocytes (male) and one that produces only fertile female gameotcytes (female). Our comprehensive screening covered over 1200 targetable genes, allowing us to probe sex-specific phenotypes. Our study identified hundreds of genes with specific functions in sexual reproduction.  
-
-In our study, we divided the barcoded KO vectors into pools that were transfected into male and female background lines separately, which were used to infect two groups of mice. Subsequently, we prepared two groups of mice infected with male and female mutants for mosquito feeding.
-
-On day 0, the male and female mutants were separately fed to mosquitoes in duplicate: "Mosquito Feed 1" (MF1, indicated by blue dots) and "Mosquito Feed 2" (MF2, indicated by red dots). For each mosquito feed, we collected one day 0 input sample. Therefore, on day 0, we generated a total of four samples.
-
-On day 13 or 14, we collected output samples from each mosquito feed in duplicate. Consequently, on day 13 or 14, we generated a total of eight samples. 
-
-![Sample description](https://github.com/vpandey-om/Fertility_screen/blob/master/output/sample.png)
-
-Within this repository, you will find scripts and datasets detailing our analysis of raw barseq data and the computation of fertility phenotype metrics. Additionally, we have included the scripts used to generate figures featured in our research paper.
-
-
-## Prerequisites
+## Modeling
 
 Users need to install before using the Snakemake workflow.
 

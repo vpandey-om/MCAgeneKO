@@ -39,9 +39,28 @@ To address the difficulties of our classification problems, we used a two-pronge
 
 2. Bagging Technique: To supplement our unique loss function, we used the bagging technique, a durable and effective ensemble method. This strategy requires training numerous models on different subsets of the dataset and then combining their predictions. Bagging successfully mitigates variation, improves model stability, and improves our classification framework's overall predictive capabilities by using the collective knowledge of several models.
 
-### Challenges in Classification Tasks:
+### MCAgeneKO model
+Our phenotypic prediction model is a multi-input, multi-label neural network. As input features, it integrates single-cell data, protein embeddings, gene sequence-based characteristics, and gene ontology data. After that, a dropout layer is added, followed by a dense layer for each input type. Finally, the model has an output layer that predicts essential phenotypes across six distinct stages.
 ![NN](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/multilableNN.png)
+
+To initiate training and prediction with the model, execute the following script:
+~~~
+python run_model.py
+~~~
+To initiate training and prediction with the model, execute the following script:
+
+python visualize_result.py
+~~~
+The symbol '*' highlights the optimal model, showcasing the most effective stage and hyperparameters utilized during the model's training. 
 ![parameter performance](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/parameters_performance.png)
+
+### Using a Balanced Random Forest Classifier
+For individual stages, we adopted the Balanced Random Forest Classifier to assess and predict model performance.
+To execute this, run the following script:
+~~~
+python random_classifiers_ml.py
+~~~
+The resultant ROC curve is displayed below:
 ![ROC](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/ROC.png)
 
 

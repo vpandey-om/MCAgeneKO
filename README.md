@@ -54,7 +54,7 @@ python visualize_result.py
 The symbol '*' highlights the optimal model, showcasing the most effective stage and hyperparameters utilized during the model's training. 
 ![parameter performance](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/parameters_performance.png)
 
-### Using a Balanced Random Forest Classifier
+### Using a Balanced Random Forest Classifier and other ML algo.
 For individual stages, we adopted the Balanced Random Forest Classifier to assess and predict model performance.
 To execute this, run the following script:
 ~~~

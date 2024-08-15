@@ -1,8 +1,8 @@
-# MCAgeneKO
+# MCA-GENet
 This repository covers the modeling, data analysis, and visualization techniques for predicting gene knockouts in malaria, aiding in the identification of potential candidates for drug discovery.
 
 ## Overview
-Our initiative aims to promote drug discovery in the context of malaria parasite research by combining machine and deep learning techniques to decipher gene functions. Specifically, we used prediction algorithms to conduct a genome-wide search for critical genes required by malaria parasites. These models were carefully trained using data from Plasmodium berghei knockout mutant growth rates. We added gene and protein-centric features to improve the model's prediction capabilities. Our systematic efforts resulted in a noteworthy accuracy rate of 70% in predicting cases where specific genes are considered essential based only on gene-related traits.
+MCA-GENet is an advanced neural network model developed to enhance our understanding of malaria caused by Plasmodium parasites. By integrating single-cell gene expression data with features from genes, proteins, and gene ontologies, MCA-GENet identifies critical genes and predicts their roles throughout the malaria parasite's life cycle. Trained on conditional phenotypic data from various stages, it provides accurate insights into gene functions, offering significant advancements in malaria research and aiding in the development of targeted treatments and therapies.
 
 ## Prerequisites
 

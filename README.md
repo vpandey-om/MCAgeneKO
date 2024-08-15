@@ -52,7 +52,7 @@ To initiate training and prediction with the model, execute the following script
 python visualize_result.py
 ~~~
 The symbol '*' highlights the optimal model, showcasing the most effective stage and hyperparameters utilized during the model's training. 
-![parameter performance](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/parameters_performance.png)
+![parameter performance](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/Fig1_heatmp_selected_best_models.png)
 
 ### Using a Balanced Random Forest Classifier and other ML algo.
 For individual stages, we adopted the Balanced Random Forest Classifier to assess and predict model performance.

@@ -27,7 +27,7 @@ Furthermore, I've provided comprehensive data for training, validation, and test
 The malaria parasite undergoes a complex life cycle involving both vertebrate hosts and mosquito vectors ([detail](https://www.malariavaccine.org/malaria-and-vaccines/vaccine-development/life-cycle-malaria-parasite)). The phenotype data are avilable for six distinct stages:Blood,Liver,Male Gametocyte,Female Gametocyte,Oocyst,Sporozoite.
 
 We approached this challenge as a multilabel classification task, where each life stage is associated with phenotype data categorized as either present (yes) or absent (no).
-![Multilabel classification](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/multilable.png)
+![Multilabel classification](https://github.com/vpandey-om/MCAgeneKO/blob/main/Figures/NN.svg.png)
 
 ### Challenges in Classification Tasks:
 1. For genes associated with the blood phenotype, data for the remaining five stages (Liver, Male Gametocyte, Female Gametocyte, Oocyst, Sporozoite) are unavailable due to experimental constraints.

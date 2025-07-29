@@ -1,6 +1,12 @@
 # MCA-GENet
 This repository covers the modeling, data analysis, and visualization techniques for predicting gene knockouts in malaria, aiding in the identification of potential candidates for drug discovery.
 
+## Acknowledgments
+
+This project utilized computational resources provided by the National Academic Infrastructure for Supercomputing in Sweden (NAISS). We gratefully acknowledge their support.
+This repository supports the manuscript:
+"Neural Network-Based Insights into Gene Functions Across the Plasmodium Life Cycle" (in preparation; target journal: PLOS Computational Biology).
+
 ## Overview
 MCA-GENet is an advanced neural network model developed to enhance our understanding of malaria caused by Plasmodium parasites. By integrating single-cell gene expression data with features from genes, proteins, and gene ontologies, MCA-GENet identifies critical genes and predicts their roles throughout the malaria parasite's life cycle. Trained on conditional phenotypic data from various stages, it provides accurate insights into gene functions, offering significant advancements in malaria research and aiding in the development of targeted treatments and therapies.
 
